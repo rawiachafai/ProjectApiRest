@@ -80,7 +80,7 @@ class PlaceController extends AbstractController
     
     }
     /**
-     * @Rest\View()
+     * @Rest\View(serializerGroups={"place"})
      * @Rest\Put("/places/{id}")
      */
     public function updatePlaceAction(Request $request)
